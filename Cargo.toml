@@ -4,6 +4,10 @@ resolver = "2"
 members = ["piltover", "bins/bindgen"]
 
 [workspace.dependencies]
-cainome = { version = "0.9.0", features = ["abigen-rs"] }
-starknet = "0.16.0"
+starknet = "0.17.0-rc.2"
 piltover = { path = "piltover" }
+
+# temp: must match the exact rev used by katana for the rpc 0.9 support
+cainome = { git = "https://github.com/kariy/cainome", branch = "feat/rpc0.9", features = [
+	"abigen-rs",
+] }
