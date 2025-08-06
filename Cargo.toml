@@ -8,6 +8,6 @@ starknet = "0.17.0-rc.2"
 piltover = { path = "piltover" }
 
 # temp: must match the exact rev used by katana for the rpc 0.9 support
-cainome = { git = "https://github.com/kariy/cainome", rev = "7d60de1", features = [
+cainome = { git = "https://github.com/cartridge-gg/cainome", rev = "7d60de1", features = [
 	"abigen-rs",
 ] }
